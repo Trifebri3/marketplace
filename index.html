@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>TRYARTMARKET</title>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="container">
+            <div class="row ai-center jc-sb">
+                <div class="nav-brand">
+                    <img src="/image/tryartmarket_logo.png" alt="Logo" class="logo-header">
+                    <h1><a href="">TRYARTMARKET</a></h1>
+                </div>
+                <div class="nav-contact">
+                    <a href="#" class="btn white-btn"><i class="fas fa-user"></i> Daftar / Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end-->
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="welcome-section">
+            <div class="logo">
+                <img src="/image/5.png" alt="Logo">
+            </div>
+            <h2>Selamat Datang di TRYARTMARKET</h2>
+            <p class="description">Kami menyediakan berbagai produk dan karya seni berkualitas. Jelajahi katalog kami dan temukan karya yang sesuai dengan selera Anda.</p>
+            <div class="video-container">
+                <video autoplay loop muted playsinline>
+                    <source src="/image/Clean LineStyle Logo_free (1).mp4" type="video/mp4">
+                </video>
+            </div>
+===================GARIS
+                </div>
+                <div class="register-login">
+                    <a href="#"><i class="fas fa-user"></i> Register/Login</a>
+                </div>
+                <div class="nav-brand">
+                    <img src="/image/tryartmarket_logo.png" alt="Logo" class="logo-header">
+                    <h1><a href="">TRYARTMARKET</a></h1>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio Controls -->
+    <div class="audio-controls">
+        <button class="audio-toggle-btn" onclick="toggleAudio()">
+            <i class="fas fa-volume-up"></i>
+        </button>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="backgroundAudio" loop>
+        <source src="/image/Attack on Titan_ Call of Silence x Zero Eclipse _ EPIC COVER (Ymir & Historia Love Theme).mp3" type="audio/mp3">
+    </audio>
+
+    <script src="js/script.js"></script>
+
+    <script>
+        // Function to toggle audio playback
+        function toggleAudio() {
+            var audio = document.getElementById("backgroundAudio");
+            var audioIcon = document.querySelector(".audio-toggle-btn i");
+            
+            if (audio.paused) {
+                audio.play();
+                audioIcon.classList.remove("fa-volume-off");
+                audioIcon.classList.add("fa-volume-up");
+            } else {
+                audio.pause();
+                audioIcon.classList.remove("fa-volume-up");
+                audioIcon.classList.add("fa-volume-off");
+            }
+        }
+    </script>
+</body>
+</html>
