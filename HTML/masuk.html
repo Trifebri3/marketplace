@@ -1,0 +1,44 @@
+<!-- index.php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Masuk</title>
+    <link rel="stylesheet" href="../css/masuk.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"></div>
+        <div class="logo-apk">
+            <img src="Picture.png" alt="">
+        </div>
+        <form action="../php/login.php" method="post">
+            <div class="form">
+                <h1>Masuk</h1>
+                <div class="form-group">
+                    <label for="fullname">Nama Pengguna :</label>
+                    <div class="input-icons">
+                        <i class="fa fa-user icon"></i>
+                        <input name="Nama_Lengkap" id="fullname" class="input-field" type="text" placeholder="Nama Pengguna" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Kata Sandi :</label>
+                    <div class="input-icons">
+                        <i class="fa fa-key icon"></i>
+                        <input name="Kata_Sandi" id="password" class="input-field" type="password" placeholder="Kata Sandi" required>
+                    </div>
+                </div>
+                <button type="submit">Masuk</button>
+                <div class="link">
+                    <p><a href="#">Lupa kata sandi</a></p>
+                    <p><a href="#">Daftar pengguna baru</a></p>
+                </div>
+            </div>
+        </form>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
